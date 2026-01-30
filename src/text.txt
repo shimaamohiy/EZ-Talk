@@ -1,0 +1,31 @@
+
+ChatApplication\
+    ProfileImages\
+        default_profile.png
+        Gedo_Khattab_20250515083105.jpg
+        Negan_Smith_20250515083140.jpg
+    src\
+        Controllers\
+            LoginCon.Java
+            ChatCon.Java
+            StoryCon.Java
+        Image\
+            // UI components
+        Models\
+            User.Java
+            ChatRoom.Java
+            Message.Java
+            Story.Java
+        Utils\
+            FilesUtil.Java
+        Views\
+            Chat.fxml
+            Login.fxml
+            Story.fxml
+        Main.Java
+    StoryImages\
+        default_profile.png
+        Gedo_Khattab_20250515083223.jpg
+        Gedo_Khattab_20250515085842.jpg
+    Files\
+        UsersFile.txt

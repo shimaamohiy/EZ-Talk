@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginCon">
+   <right>
+      <Pane prefHeight="600.0" prefWidth="462.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="168.0" prefWidth="462.0" style="-fx-background-color: #0F3338;">
+               <children>
+                  <Label layoutX="167.0" layoutY="25.0" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="50.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="136.0" layoutY="95.0" text="Sign in to continue" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="24.0" />
+                     </font>
+                  </Label>
+                  <Line endX="462.0" layoutY="168.0" scaleY="5.0" />
+               </children>
+            </Pane>
+            <Pane layoutY="168.0" prefHeight="432.0" prefWidth="462.0" style="-fx-background-color: #FDFAEB;">
+               <children>
+                  <Label layoutX="141.0" layoutY="60.0" text="Please Enter Phone Number" textFill="#0f3338">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="158.0" layoutY="140.0" text="Please Enter Password" textFill="#0f3338">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="167.0" layoutY="320.0" text="Create New Account">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="phoneNumber" layoutX="155.0" layoutY="90.0" prefWidth="150.0" />
+                  <PasswordField fx:id="password" layoutX="155.0" layoutY="170.0" prefWidth="150.0" />
+                  <Button fx:id="LoginBtn" layoutX="156.0" layoutY="220.0" mnemonicParsing="false" onAction="#Authenticate" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0F3338;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="SignUpBtn" layoutX="155.0" layoutY="360.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #0F3338;" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Line endY="600.0" layoutX="462.0" scaleX="5.0" />
+         </children>
+      </Pane>
+   </right>
+   <left>
+      <Pane fx:id="left" prefHeight="600.0" prefWidth="462.0" style="-fx-background-color: #EAA276;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="81.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Designer1.png" />
+               </image>
+            </ImageView>
+            <Line endY="600.0" scaleX="5.0" />
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Line endY="600.0" scaleX="5.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <Line endX="924.0" scaleY="5.0" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <Line endX="924.0" scaleY="5.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
