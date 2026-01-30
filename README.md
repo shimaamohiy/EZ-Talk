@@ -1,1 +1,3 @@
+##EZ-Talk
 EZ-Talk is a modern Java-based chat application that combines real-time messaging, ephemeral stories, contact management, and group conversations within an intuitive interface. Inspired by leading messaging platforms, EZ-Talk delivers a seamless, secure, and user-friendly communication experience
+##Features
